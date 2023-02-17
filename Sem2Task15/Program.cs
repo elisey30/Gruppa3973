@@ -11,13 +11,25 @@ Console.WriteLine("Введите число: ");
 // Обьявляем тип переменной проверяем на null, внутри метода и парсим 
 int num = int.Parse(Console.ReadLine() ?? "0");
 // Определаем день недели
-if (num>0 && num <6)
-{
+
+
+    if(num<=7)
+    {
+        if (num>0 && num <6)
+        {    
     //True Условия выполниются , выводим на консоль 
-    Console.WriteLine("Это рабочий день: ");
-}
-else
-{
+        Console.WriteLine("Это рабочий день: ");
+        }
+        else
+        {
     //False,  Условия не выполниются, выводим на консоль
-    Console.WriteLine("Это выходной");
-}
+        Console.WriteLine("Это выходной");
+        }
+
+
+    } 
+    else 
+    { 
+    Console.WriteLine("Это не день недели" );
+    }   
+    
